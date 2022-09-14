@@ -1,0 +1,33 @@
+{
+  "name": "aws_lambda",
+  "version": "1.0.0",
+  "description": "AWS Lambda for Slack TikTalk App",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "test": "ts-node src/test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laxmilearn/aws_lambda.git"
+  },
+  "keywords": [
+    "AWS",
+    "Lambda",
+    "Slack",
+    "Chatbot",
+    "TikTalk"
+  ],
+  "author": "Laxmi Narsimha Rao O",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laxmilearn/aws_lambda/issues"
+  },
+  "homepage": "https://github.com/laxmilearn/aws_lambda#readme",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.104",
+    "@types/node": "^18.7.18",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.3"
+  }
+}
