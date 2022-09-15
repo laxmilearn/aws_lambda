@@ -105,3 +105,6 @@ dist
 
 # VS Code IDE
 .vscode/
+
+# Temporary
+temp/

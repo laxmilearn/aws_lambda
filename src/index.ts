@@ -1,16 +1,16 @@
 import console from 'console';
 import { Context, APIGatewayProxyCallback, APIGatewayEvent } from 'aws-lambda';
 
-export const eventHandler = (event: APIGatewayEvent, context: Context, callback: APIGatewayProxyCallback): void => {
-    console.log(JSON.stringify({
-        Event: JSON.stringify(event, null, 2),
-        Context: JSON.stringify(context, null, 2)
-    }));
+export const gatewayEventHandler = (event: APIGatewayEvent, context: Context, callback: APIGatewayProxyCallback): void => {
+    console.log(`Event: ${JSON.stringify(event, null, 2)}`);
+    console.log(`Context: ${JSON.stringify(context, null, 2)}`);
 
     callback(null, {
         statusCode: 200,
         body: JSON.stringify({
-            message: 'Hello World!',
+            message: 'Hello World! v1.1',
+            event: event,
+            context: context
         }, null, 2),
     });
 };
